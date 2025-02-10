@@ -1,0 +1,24 @@
+[project]
+name = "kjl"
+version = "0.1.0"
+description = "My personal toolbox."
+readme = "README.md"
+authors = [
+    { name = "Kenji Sato", email = "mail@kenjisato.jp" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "typer>=0.15.1",
+]
+
+[project.scripts]
+kjl = "kjl.main:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.5",
+]
